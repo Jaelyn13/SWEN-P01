@@ -18,9 +18,24 @@ namespace SWEN
 
         protected void btnRates_Click(object sender, EventArgs e)
         {
-            Response.Redirect("DisplayRates.aspx?");
-            
+            string checkin = tbxIn.Text;
+            string checkout = tbxOut.Text;
+            string noofroom = ddlRoom.SelectedValue;
+            string adult = ddlAdult.SelectedValue;
+            string child = ddlChild.SelectedValue;
+            string roomtype = ddlRoomType.SelectedValue;
+            string nights = ddlNight.SelectedValue;
 
+            string querystring = "checkin=" + checkin;
+            querystring += "&" + "checkout=" + checkout;
+            querystring += "&" + "noofroom=" + noofroom;
+            querystring += "&" + "adult=" + adult;
+            querystring += "&" + "child=" + child;
+            querystring += "&" + "roomtype=" + roomtype;
+            querystring += "&" + "nights=" + nights;
+
+            Server.Transfer("DisplayRates.aspx?" + querystring);
+            
         }
     }
 }

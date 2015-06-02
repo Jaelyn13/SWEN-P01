@@ -4,6 +4,13 @@
         .auto-style20 {
             width: 204px;
         }
+    .auto-style21 {
+        width: 204px;
+        height: 23px;
+    }
+    .auto-style22 {
+        height: 23px;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -12,12 +19,20 @@
     <div>
         <table style="width:100%;">
             <tr>
-                <td colspan="2">Enter Particulars:</td>
+                <td colspan="2">Customer Details:</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td colspan="2">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style20">Passport No:</td>
+                <td>
+                    <asp:TextBox ID="tbxPassportNo" runat="server"></asp:TextBox>
+                </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
@@ -38,6 +53,33 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
+                <td class="auto-style20">Gender:</td>
+                <td>
+                    <asp:RadioButtonList ID="rblGender" runat="server" RepeatDirection="Horizontal">
+                        <asp:ListItem>Female</asp:ListItem>
+                        <asp:ListItem>Male</asp:ListItem>
+                    </asp:RadioButtonList>
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style20">Date of Birth:</td>
+                <td>
+                    <asp:TextBox ID="tbxDOB" runat="server"></asp:TextBox>
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style21">Nationality:</td>
+                <td class="auto-style22">
+                    <asp:TextBox ID="tbxNationality" runat="server"></asp:TextBox>
+                </td>
+                <td class="auto-style22"></td>
+                <td class="auto-style22"></td>
+            </tr>
+            <tr>
                 <td class="auto-style20">Contact Number:</td>
                 <td>
                     <asp:TextBox ID="tbxContact" runat="server"></asp:TextBox>
@@ -46,17 +88,17 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style20">Home Number:</td>
+                <td class="auto-style20">Mailing Address:</td>
                 <td>
-                    <asp:TextBox ID="tbxHome" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="tbxMailing" runat="server"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style20">Mailing Address:</td>
+                <td class="auto-style20">Country:</td>
                 <td>
-                    <asp:TextBox ID="tbxMailing" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="tbxCountry" runat="server"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -101,6 +143,29 @@
                 <td>
                     <asp:TextBox ID="tbxExpired" runat="server"></asp:TextBox>
                 </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style20">&nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style20">Remarks: (100 Words)</td>
+                <td>
+                    &nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style20">
+                    <asp:TextBox ID="tbxRemarks" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    &nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>

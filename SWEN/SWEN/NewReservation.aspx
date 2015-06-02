@@ -80,7 +80,7 @@
             </tr>
             <tr>
                 <td class="auto-style20">&nbsp;</td>
-                <td>Room</td>
+                <td>No of Room(s)</td>
                 <td class="auto-style27" colspan="4">Adult</td>
                 <td class="auto-style28">Child</td>
             </tr>
@@ -150,7 +150,7 @@
                         <asp:ListItem>Twin Room</asp:ListItem>
                         <asp:ListItem>Single Bedroom</asp:ListItem>
                         <asp:ListItem>Double Bedroom</asp:ListItem>
-                        <asp:ListItem>Triple Room</asp:ListItem>
+                        <asp:ListItem>Triple Bedroom</asp:ListItem>
                         <asp:ListItem>Twin for sole use</asp:ListItem>
                         <asp:ListItem>Quadruple Room</asp:ListItem>
                     </asp:DropDownList>

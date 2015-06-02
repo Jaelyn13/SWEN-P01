@@ -13,6 +13,15 @@ namespace SWEN {
     public partial class CustomerDetails {
         
         /// <summary>
+        /// tbxPassportNo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbxPassportNo;
+        
+        /// <summary>
         /// tbxFirst control.
         /// </summary>
         /// <remarks>
@@ -31,6 +40,33 @@ namespace SWEN {
         protected global::System.Web.UI.WebControls.TextBox tbxLast;
         
         /// <summary>
+        /// rblGender control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList rblGender;
+        
+        /// <summary>
+        /// tbxDOB control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbxDOB;
+        
+        /// <summary>
+        /// tbxNationality control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbxNationality;
+        
+        /// <summary>
         /// tbxContact control.
         /// </summary>
         /// <remarks>
@@ -40,15 +76,6 @@ namespace SWEN {
         protected global::System.Web.UI.WebControls.TextBox tbxContact;
         
         /// <summary>
-        /// tbxHome control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbxHome;
-        
-        /// <summary>
         /// tbxMailing control.
         /// </summary>
         /// <remarks>
@@ -56,6 +83,15 @@ namespace SWEN {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbxMailing;
+        
+        /// <summary>
+        /// tbxCountry control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbxCountry;
         
         /// <summary>
         /// tbxEmail control.
@@ -101,6 +137,15 @@ namespace SWEN {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbxExpired;
+        
+        /// <summary>
+        /// tbxRemarks control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbxRemarks;
         
         /// <summary>
         /// btnSubmit control.
