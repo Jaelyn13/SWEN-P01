@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="CustomerDetails.aspx.cs" Inherits="SWEN.CustomerDetails" %>
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style20 {
@@ -67,6 +68,8 @@
                 <td class="auto-style20">Date of Birth:</td>
                 <td>
                     <asp:TextBox ID="tbxDOB" runat="server"></asp:TextBox>
+                    <cc1:CalendarExtender ID="tbxDOB_CalendarExtender" runat="server" TargetControlID="tbxDOB">
+                    </cc1:CalendarExtender>
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>

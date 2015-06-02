@@ -47,9 +47,7 @@
         <table style="width:100%;">
             <tr>
                 <td class="auto-style29">
-                    <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
-                    </asp:ToolkitScriptManager>
-                </td>
+                    &nbsp;</td>
                 <td class="auto-style30" colspan="6" style="font-family: 'Arial Black'">New Check In</td>
             </tr>
             <tr>
@@ -65,11 +63,15 @@
                 <td class="auto-style20">&nbsp;</td>
                 <td colspan="3">
                     <asp:TextBox ID="tbxIn" runat="server"></asp:TextBox>
+                    <asp:CalendarExtender ID="tbxIn_CalendarExtender0" runat="server" TargetControlID="tbxIn">
+                    </asp:CalendarExtender>
                     <asp:CalendarExtender ID="tbxIn_CalendarExtender" runat="server" TargetControlID="tbxIn">
                     </asp:CalendarExtender>
                 </td>
                 <td class="auto-style21" colspan="3">
                     <asp:TextBox ID="tbxOut" runat="server"></asp:TextBox>
+                    <asp:CalendarExtender ID="tbxOut_CalendarExtender0" runat="server" TargetControlID="tbxOut">
+                    </asp:CalendarExtender>
                     <asp:CalendarExtender ID="tbxOut_CalendarExtender" runat="server" TargetControlID="tbxOut">
                     </asp:CalendarExtender>
                 </td>

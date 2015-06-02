@@ -13,15 +13,6 @@ namespace SWEN {
     public partial class New_Check_In {
         
         /// <summary>
-        /// ToolkitScriptManager1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::AjaxControlToolkit.ToolkitScriptManager ToolkitScriptManager1;
-        
-        /// <summary>
         /// tbxIn control.
         /// </summary>
         /// <remarks>
@@ -29,6 +20,15 @@ namespace SWEN {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbxIn;
+        
+        /// <summary>
+        /// tbxIn_CalendarExtender0 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::AjaxControlToolkit.CalendarExtender tbxIn_CalendarExtender0;
         
         /// <summary>
         /// tbxIn_CalendarExtender control.
@@ -47,6 +47,15 @@ namespace SWEN {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbxOut;
+        
+        /// <summary>
+        /// tbxOut_CalendarExtender0 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::AjaxControlToolkit.CalendarExtender tbxOut_CalendarExtender0;
         
         /// <summary>
         /// tbxOut_CalendarExtender control.

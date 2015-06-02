@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="NewReservation.aspx.cs" Inherits="SWEN.NewReservation" %>
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style20 {
@@ -46,9 +47,7 @@
         <table style="width:100%;">
             <tr>
                 <td class="auto-style29">
-                    <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
-                    </asp:ToolkitScriptManager>
-                </td>
+                    &nbsp;</td>
                 <td class="auto-style30" colspan="6" style="font-family: 'Arial Black'">New Reservation</td>
             </tr>
             <tr>

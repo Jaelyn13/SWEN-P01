@@ -91,3 +91,4 @@ C:\Users\oOtiAnYuOo\Desktop\SWEN-P01-master\SWEN-P01-master\SWEN\SWEN\bin\zh-Han
 C:\Users\oOtiAnYuOo\Desktop\SWEN-P01-master\SWEN-P01-master\SWEN\SWEN\obj\Debug\SWEN.csprojResolveAssemblyReference.cache
 C:\Users\oOtiAnYuOo\Desktop\SWEN-P01-master\SWEN-P01-master\SWEN\SWEN\obj\Debug\SWEN.dll
 C:\Users\oOtiAnYuOo\Desktop\SWEN-P01-master\SWEN-P01-master\SWEN\SWEN\obj\Debug\SWEN.pdb
+C:\Users\User\Downloads\GitHub\SWEN-P01\SWEN\SWEN\obj\Debug\SWEN.csprojResolveAssemblyReference.cache
