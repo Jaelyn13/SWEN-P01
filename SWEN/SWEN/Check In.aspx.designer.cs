@@ -13,21 +13,21 @@ namespace SWEN {
     public partial class Check_In {
         
         /// <summary>
-        /// tbxCheckin control.
+        /// btnCheckIn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button tbxCheckin;
+        protected global::System.Web.UI.WebControls.Button btnCheckIn;
         
         /// <summary>
-        /// tbxEnterReservation control.
+        /// btnEnterReservation control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button tbxEnterReservation;
+        protected global::System.Web.UI.WebControls.Button btnEnterReservation;
     }
 }

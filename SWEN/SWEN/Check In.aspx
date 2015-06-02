@@ -45,10 +45,10 @@
         <tr>
             <td class="auto-style20">&nbsp;</td>
             <td class="auto-style21" colspan="2">
-                <asp:Button ID="tbxCheckin" runat="server" Text="New Check In" />
+                <asp:Button ID="btnCheckIn" runat="server" Text="New Check In" OnClick="btnCheckin_Click" />
             </td>
             <td>
-                <asp:Button ID="tbxEnterReservation" runat="server" Text="Enter Reservation No." />
+                <asp:Button ID="btnEnterReservation" runat="server" Text="Enter Reservation No." OnClick="btnEnterReservation_Click" />
             </td>
         </tr>
     </table>

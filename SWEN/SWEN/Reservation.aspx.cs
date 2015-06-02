@@ -13,5 +13,16 @@ namespace SWEN
         {
 
         }
+
+    
+        protected void btnNew_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("NewReservation.aspx?");
+        }
+
+        protected void btnEdit_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ViewModifyReservation.aspx?");
+        }
     }
 }

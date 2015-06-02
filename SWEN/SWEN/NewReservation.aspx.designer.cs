@@ -22,15 +22,6 @@ namespace SWEN {
         protected global::AjaxControlToolkit.ToolkitScriptManager ToolkitScriptManager1;
         
         /// <summary>
-        /// tbxName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbxName;
-        
-        /// <summary>
         /// tbxIn control.
         /// </summary>
         /// <remarks>
@@ -94,12 +85,30 @@ namespace SWEN {
         protected global::System.Web.UI.WebControls.DropDownList ddlChild;
         
         /// <summary>
-        /// tbxMakeReservation control.
+        /// ddlRoomType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button tbxMakeReservation;
+        protected global::System.Web.UI.WebControls.DropDownList ddlRoomType;
+        
+        /// <summary>
+        /// ddlNight control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlNight;
+        
+        /// <summary>
+        /// btnRates control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnRates;
     }
 }

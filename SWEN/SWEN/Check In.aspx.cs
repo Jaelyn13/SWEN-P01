@@ -13,5 +13,19 @@ namespace SWEN
         {
 
         }
+
+        protected void btnCheckin_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("New Check In.aspx?");
+        }
+
+        protected void btnEnterReservation_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("New Check In 2.aspx?");
+        }
+
+       
+   
+        
     }
 }

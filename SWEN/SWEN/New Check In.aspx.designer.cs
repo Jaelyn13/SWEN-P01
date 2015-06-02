@@ -85,12 +85,30 @@ namespace SWEN {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList3;
         
         /// <summary>
-        /// tbxCheckIn control.
+        /// ddlRoomType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button tbxCheckIn;
+        protected global::System.Web.UI.WebControls.DropDownList ddlRoomType;
+        
+        /// <summary>
+        /// ddlNight control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlNight;
+        
+        /// <summary>
+        /// btnCheckIn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnCheckIn;
     }
 }

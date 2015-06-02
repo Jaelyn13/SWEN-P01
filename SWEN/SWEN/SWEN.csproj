@@ -87,12 +87,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Check In.aspx" />
-    <Content Include="End Reservation.aspx" />
+    <Content Include="CustomerDetails.aspx" />
+    <Content Include="DeleteReservation.aspx" />
+    <Content Include="DisplayCheckIn.aspx" />
+    <Content Include="DisplayRates.aspx" />
+    <Content Include="DisplayReservation.aspx" />
+    <Content Include="EndReservation.aspx" />
+    <Content Include="EndCheckIn.aspx" />
     <Content Include="LogIn.aspx" />
     <Content Include="New Check In 2.aspx" />
     <Content Include="New Check In.aspx" />
     <Content Include="NewReservation.aspx" />
     <Content Include="Reservation.aspx" />
+    <Content Include="UpdateReservation.aspx" />
     <Content Include="ViewModifyReservation.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
@@ -105,12 +112,54 @@
     <Compile Include="Check In.aspx.designer.cs">
       <DependentUpon>Check In.aspx</DependentUpon>
     </Compile>
-    <Compile Include="End Reservation.aspx.cs">
-      <DependentUpon>End Reservation.aspx</DependentUpon>
+    <Compile Include="CustomerDetails.aspx.cs">
+      <DependentUpon>CustomerDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="End Reservation.aspx.designer.cs">
-      <DependentUpon>End Reservation.aspx</DependentUpon>
+    <Compile Include="CustomerDetails.aspx.designer.cs">
+      <DependentUpon>CustomerDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteReservation.aspx.cs">
+      <DependentUpon>DeleteReservation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteReservation.aspx.designer.cs">
+      <DependentUpon>DeleteReservation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayCheckIn.aspx.cs">
+      <DependentUpon>DisplayCheckIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DisplayCheckIn.aspx.designer.cs">
+      <DependentUpon>DisplayCheckIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayRates.aspx.cs">
+      <DependentUpon>DisplayRates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DisplayRates.aspx.designer.cs">
+      <DependentUpon>DisplayRates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayReservation.aspx.cs">
+      <DependentUpon>DisplayReservation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DisplayReservation.aspx.designer.cs">
+      <DependentUpon>DisplayReservation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EndReservation.aspx.cs">
+      <DependentUpon>EndReservation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EndReservation.aspx.designer.cs">
+      <DependentUpon>EndReservation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EndCheckIn.aspx.cs">
+      <DependentUpon>EndCheckIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EndCheckIn.aspx.designer.cs">
+      <DependentUpon>EndCheckIn.aspx</DependentUpon>
     </Compile>
     <Compile Include="LogIn.aspx.cs">
       <DependentUpon>LogIn.aspx</DependentUpon>
@@ -154,6 +203,13 @@
     </Compile>
     <Compile Include="Reservation.aspx.designer.cs">
       <DependentUpon>Reservation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateReservation.aspx.cs">
+      <DependentUpon>UpdateReservation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateReservation.aspx.designer.cs">
+      <DependentUpon>UpdateReservation.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewModifyReservation.aspx.cs">
       <DependentUpon>ViewModifyReservation.aspx</DependentUpon>

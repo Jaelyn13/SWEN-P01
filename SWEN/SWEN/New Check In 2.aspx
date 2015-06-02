@@ -34,7 +34,7 @@
             <tr>
                 <td class="auto-style20">&nbsp;</td>
                 <td style="font-family: Arial, Helvetica, sans-serif">Reservation No.:</td>
-                <td style="font-family: Arial, Helvetica, sans-serif">Family/Last Name</td>
+                <td style="font-family: Arial, Helvetica, sans-serif">First Name:</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
@@ -55,7 +55,7 @@
             <tr>
                 <td class="auto-style20">&nbsp;</td>
                 <td colspan="2">
-                    <asp:Button ID="tbxNext" runat="server" Text="Next" />
+                    <asp:Button ID="btnNext" runat="server" Text="Next" OnClick="btnNext_Click" />
                 </td>
                 <td>&nbsp;</td>
             </tr>

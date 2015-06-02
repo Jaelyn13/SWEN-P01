@@ -13,5 +13,11 @@ namespace SWEN
         {
 
         }
+
+
+        protected void btnNext_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("DisplayReservation.aspx?");
+        }
     }
 }

@@ -13,5 +13,14 @@ namespace SWEN
         {
 
         }
+
+      
+
+        protected void btnRates_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("DisplayRates.aspx?");
+            
+
+        }
     }
 }

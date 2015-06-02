@@ -13,5 +13,12 @@ namespace SWEN
         {
 
         }
+
+        protected void btnCheckIn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("DisplayRates.aspx?");
+        }
+
+        
     }
 }

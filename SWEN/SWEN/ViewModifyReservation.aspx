@@ -55,7 +55,7 @@
             <tr>
                 <td class="auto-style20">&nbsp;</td>
                 <td colspan="2">
-                    <asp:Button ID="tbxNext" runat="server" Text="Next" />
+                    <asp:Button ID="btnNext" runat="server" Text="Next" OnClick="btnNext_Click" />
                 </td>
                 <td>&nbsp;</td>
             </tr>
