@@ -13,6 +13,15 @@ namespace SWEN {
     public partial class NewReservation {
         
         /// <summary>
+        /// ToolkitScriptManager1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ToolkitScriptManager ToolkitScriptManager1;
+        
+        /// <summary>
         /// tbxIn control.
         /// </summary>
         /// <remarks>
@@ -28,7 +37,7 @@ namespace SWEN {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::AjaxControlToolkit.CalendarExtender tbxIn_CalendarExtender;
+        protected global::System.Web.UI.WebControls.CalendarExtender tbxIn_CalendarExtender;
         
         /// <summary>
         /// tbxOut control.
@@ -46,7 +55,7 @@ namespace SWEN {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::AjaxControlToolkit.CalendarExtender tbxOut_CalendarExtender;
+        protected global::System.Web.UI.WebControls.CalendarExtender tbxOut_CalendarExtender;
         
         /// <summary>
         /// ddlRoom control.
