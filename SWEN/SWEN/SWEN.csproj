@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Check In.aspx" />
+    <Content Include="club_palm_bay_logo_vector.png" />
     <Content Include="CustomerDetails.aspx" />
     <Content Include="DeleteReservation.aspx" />
     <Content Include="DisplayCheckIn.aspx" />
