@@ -79,38 +79,6 @@ namespace SWEN.Classes
             return rowsinserted;
         }
 
-        public static ArrayList GetReservationNo(string creditcardno)
-        {
-            ArrayList result = new ArrayList();
-            SqlConnection conn = null;
-            try
-            {
-                conn = new SqlConnection();
-                conn.ConnectionString = ConfigurationManager.ConnectionStrings["DRHMSdbConnectionString"].ConnectionString;
-                conn.Open();
-                SqlCommand comm = new SqlCommand();
-                comm.Connection = conn;
-                comm.CommandText = "SELECT bookingid FROM Booking WHERE creditcardno=@creditcardno";
-                comm.Parameters.AddWithValue("@creditcardno", creditcardno);
-                SqlDataReader dr = comm.ExecuteReader();
-                while (dr.Read())
-                {
-                    Booking b = new Booking();
-                    b.Bookingid = (int)dr["Bookingid"];
-                    result.Add(b);
-                }
-
-                dr.Close();
-
-            }
-            catch (SqlException e)
-            {
-                throw e;
-            }
-
-            return result;
-
-        }
 
         public static Booking GetBookingId(int bookingid)
         {
@@ -124,24 +92,19 @@ namespace SWEN.Classes
 
                 SqlCommand comm = new SqlCommand();
                 comm.Connection = conn;
-                comm.CommandText = "SELECT * FROM booking WHERE bookingid=@bookingid";
+                comm.CommandText = "SELECT * FROM Booking WHERE bookingid=@bookingid";
                 comm.Parameters.AddWithValue("@bookingid", bookingid);
 
                 SqlDataReader dr = comm.ExecuteReader();
                 if (dr.Read())
                 {
-                    b.Cardexpirydate = (string)dr["cardexpirydate"];
-                    b.Checkindate = (string)dr["checkindate"];
-                    b.Checkoutdate = (string)dr["checkoutdate"];
-                    b.Creditcardno = (string)dr["creditcardno"];
-                    b.Creditcardtype = (string)dr["creditcardtype"];
-                    b.Cvc = (string)dr["cvc"];
-                    b.Noofadults = (string)dr["noofadults"];
-                    b.Noofchildren = (string)dr["noofchildren"];
-                    b.Noofdays = (string)dr["noofdays"];
-                    b.Noofroom = (string)dr["noofroom"];
-                    b.Remarks = (string)dr["remaerks"];
-                    b.Roomtype = (string)dr["roomtype"];
+                    b.Checkindate = (string)dr["Checkindate"];
+                    b.Checkoutdate = (string)dr["Checkoutdate"];
+                    b.Noofadults = Convert.ToString((int)dr["Noofadults"]);
+                    b.Noofchildren = Convert.ToString((int)dr["Noofchildren"]);
+                    b.Noofdays = Convert.ToString((int)dr["Noofdays"]);
+                    b.Noofroom = Convert.ToString((int)dr["Noofroom"]);
+                    b.Roomtype = (string)dr["Roomtype"];
                 }
                     
             }
@@ -153,7 +116,35 @@ namespace SWEN.Classes
             return b;
         }
 
+        public static int UpdateBooking(Booking b)
+        {
+            int rowsupdated = 0;
 
+            SqlConnection conn = null;
+            try
+            {
+                conn = new SqlConnection();
+                conn.ConnectionString = ConfigurationManager.ConnectionStrings["DRHMSdbConnectionString"].ConnectionString;
+                conn.Open();
+                SqlCommand comm = new SqlCommand();
+                comm.Connection = conn;
+                comm.CommandText = "UPDATE Booking SET checkindate=@checkindate,checkoutdate=@checkoutdate,noofroom=@noofroom,noofadults=@noofadults,noofchildren=@noofchildren,noofdays=@noofdays,roomtype=@roomtype where bookingid=@bookingid";
+                comm.Parameters.AddWithValue("@checkindate", b.Checkindate);
+                comm.Parameters.AddWithValue("@checkoutdate", b.Checkoutdate);
+                comm.Parameters.AddWithValue("@noofroom", b.Noofroom);
+                comm.Parameters.AddWithValue("@noofadults", b.Noofadults);
+                comm.Parameters.AddWithValue("@noofchildren", b.Noofchildren);
+                comm.Parameters.AddWithValue("@noofdays", b.Noofdays);
+                comm.Parameters.AddWithValue("@roomtype", b.Roomtype);
+                comm.Parameters.AddWithValue("@bookingid", b.Bookingid);
+                rowsupdated = comm.ExecuteNonQuery();
+            }
+            catch (SqlException e)
+            {
+                throw e;
+            }
+            return rowsupdated;
+        }
         
 
     }

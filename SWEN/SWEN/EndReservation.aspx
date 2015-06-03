@@ -56,14 +56,6 @@
             </tr>
             <tr>
                 <td class="auto-style22">&nbsp;</td>
-                <td class="auto-style46">Name:</td>
-                <td class="auto-style44" colspan="3">
-                    <asp:Label ID="lblName" runat="server"></asp:Label>
-                </td>
-                <td class="auto-style33">&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style22">&nbsp;</td>
                 <td class="auto-style46">No of Room(s):</td>
                 <td class="auto-style44" colspan="3">
                     <asp:Label ID="lblRoom" runat="server"></asp:Label>

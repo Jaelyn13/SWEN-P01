@@ -15,7 +15,6 @@ namespace SWEN
 
         {
             int bookingid = Convert.ToInt32(Request.QueryString["bookingid"]);
-
             if (!Page.IsPostBack)
             {
                 Booking b = DRHMSdbManager.GetBookingId(bookingid);
@@ -27,24 +26,42 @@ namespace SWEN
                 lblNight.Text = b.Noofdays;
                 lblAdult.Text = b.Noofadults;
                 lblChild.Text = b.Noofchildren;
+
             }
-           
 
         }
 
         protected void btnUpdate_Click(object sender, EventArgs e)
         {
-            Response.Redirect("UpdateReservation.aspx?");
+            string checkin = lblDatein.Text;
+            string checkout = lblDateOut.Text;
+            string noofroom = lblRoom.Text;
+            string adult = lblAdult.Text;
+            string child = lblChild.Text;
+            string roomtype = lblRoomType.Text;
+            string nights = lblNight.Text;
+            string bookingid = Request.QueryString["bookingid"];
+
+            string querystring = "checkin=" + checkin;
+            querystring += "&" + "checkout=" + checkout;
+            querystring += "&" + "noofroom=" + noofroom;
+            querystring += "&" + "adult=" + adult;
+            querystring += "&" + "child=" + child;
+            querystring += "&" + "roomtype=" + roomtype;
+            querystring += "&" + "nights=" + nights;
+            querystring += "&" + "bookingid=" + bookingid;
+
+            Server.Transfer("UpdateReservation.aspx?" + querystring);
         }
 
         protected void btnDelete_Click(object sender, EventArgs e)
         {
-            Response.Redirect("DeleteReservation.aspx?");
+            Response.Redirect("DeleteReservation.aspx");
         }
 
         protected void btnHome_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Reservation.aspx?");
+            Response.Redirect("Reservation.aspx");
         }
 
 

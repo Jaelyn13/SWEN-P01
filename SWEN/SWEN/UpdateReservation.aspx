@@ -47,8 +47,8 @@
         <table style="width:100%;">
             <tr>
                 <td class="auto-style29">
-                    <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
-                    </asp:ToolkitScriptManager>
+                    <asp:ScriptManager ID="ScriptManager1" runat="server">
+                    </asp:ScriptManager>
                 </td>
                 <td class="auto-style30" colspan="6" style="font-family: 'Arial Black'">Update Reservation</td>
             </tr>
@@ -84,7 +84,7 @@
             </tr>
             <tr>
                 <td class="auto-style20">&nbsp;</td>
-                <td>Room</td>
+                <td>No of Room(s)</td>
                 <td class="auto-style27" colspan="4">Adult</td>
                 <td class="auto-style28">Child</td>
             </tr>
@@ -105,7 +105,7 @@
                     </asp:DropDownList>
                 </td>
                 <td class="auto-style21" colspan="2">
-                    <asp:DropDownList ID="ddlRoom0" runat="server" style="height: 22px">
+                    <asp:DropDownList ID="ddlAdult" runat="server" style="height: 22px">
                         <asp:ListItem>1</asp:ListItem>
                         <asp:ListItem>2</asp:ListItem>
                         <asp:ListItem>3</asp:ListItem>
@@ -119,7 +119,7 @@
                     </asp:DropDownList>
                 </td>
                 <td class="auto-style21" colspan="2">
-                    <asp:DropDownList ID="ddlRoom1" runat="server" style="height: 22px">
+                    <asp:DropDownList ID="ddlChild" runat="server" style="height: 22px">
                         <asp:ListItem>1</asp:ListItem>
                         <asp:ListItem>2</asp:ListItem>
                         <asp:ListItem>3</asp:ListItem>

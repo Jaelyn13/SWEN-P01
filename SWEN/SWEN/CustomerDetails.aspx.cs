@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using SWEN.Classes;
+using System.Collections;
 
 namespace SWEN
 {
@@ -72,10 +73,6 @@ namespace SWEN
             if (DRHMSdbManager.CreateBooking(b) == 1 && DRHMSdbManager.CreateCustomer(c) == 1)
             {
                 Server.Transfer("EndReservation.aspx?" + querystring);
-            }
-            else
-            {
-                lblStatus.Text = "Unsuccessful creation of reservation";
             }
                         
         }

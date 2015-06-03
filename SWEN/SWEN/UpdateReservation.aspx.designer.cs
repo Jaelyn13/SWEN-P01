@@ -13,12 +13,13 @@ namespace SWEN {
     public partial class UpdateReservation {
         
         /// <summary>
-        /// ToolkitScriptManager1 control.
+        /// ScriptManager1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
         
         /// <summary>
         /// tbxIn control.
@@ -66,22 +67,22 @@ namespace SWEN {
         protected global::System.Web.UI.WebControls.DropDownList ddlRoom;
         
         /// <summary>
-        /// ddlRoom0 control.
+        /// ddlAdult control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlRoom0;
+        protected global::System.Web.UI.WebControls.DropDownList ddlAdult;
         
         /// <summary>
-        /// ddlRoom1 control.
+        /// ddlChild control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlRoom1;
+        protected global::System.Web.UI.WebControls.DropDownList ddlChild;
         
         /// <summary>
         /// ddlRoomType control.

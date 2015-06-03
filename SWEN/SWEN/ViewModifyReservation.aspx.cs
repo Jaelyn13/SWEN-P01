@@ -19,8 +19,11 @@ namespace SWEN
 
         protected void btnNext_Click(object sender, EventArgs e)
         {
-            
-            Response.Redirect("DisplayReservation.aspx?");
+
+            string bookingid = tbxNumber.Text;
+
+            string querystring = "bookingid=" + bookingid;
+            Server.Transfer("DisplayReservation.aspx?" + querystring);
         }
 
    
