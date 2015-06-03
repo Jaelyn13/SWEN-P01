@@ -47,7 +47,9 @@
         <table style="width:100%;">
             <tr>
                 <td class="auto-style29">
-                    &nbsp;</td>
+                    <asp:ScriptManager ID="ScriptManager1" runat="server">
+                    </asp:ScriptManager>
+                </td>
                 <td class="auto-style30" colspan="6" style="font-family: 'Arial Black'">New Reservation</td>
             </tr>
             <tr>

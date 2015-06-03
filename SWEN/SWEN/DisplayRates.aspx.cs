@@ -11,7 +11,50 @@ namespace SWEN
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string checkin = Request.QueryString["checkin"];
+            string checkout = Request.QueryString["checkout"];
+            string nights = Request.QueryString["nights"];
+            string roomtype = Request.QueryString["roomtype"];
+            string noofroom = Request.QueryString["noofroom"];
+            string adult = Request.QueryString["adult"];
+            string child = Request.QueryString["child"];
 
+            lblDatein.Text = checkin;
+            lblDateOut.Text = checkout;
+            lblNight.Text = nights;
+            lblRoom.Text = noofroom;
+            lblRoomType.Text = roomtype;
+            lblAdult.Text = adult;
+            lblChild.Text = child;
+
+            if (roomtype.Equals("Twin Room"))
+            {
+                lblRates.Text = "248.00";
+            }
+            else if (roomtype.Equals("Single Bedroom"))
+            {
+                lblRates.Text = "165.00";
+            }
+            else if (roomtype.Equals("Double Bedroom"))
+            {
+                lblRates.Text = "248.00";
+            }
+            else if (roomtype.Equals("Triple Room"))
+            {
+                lblRates.Text = "331.00";
+            }
+            else if (roomtype.Equals("Twin for sole use"))
+            {
+                lblRates.Text = "196.00";
+            }
+            else if (roomtype.Equals("Quadruple Room"))
+            {
+                lblRates.Text = "408.00";
+            }
+
+            lblAmount.Text = Convert.ToString(Convert.ToInt32(noofroom) * Convert.ToDouble(lblRates.Text) * Convert.ToInt32(nights));
+
+            
         }
 
         protected void btnConfirm_Click(object sender, EventArgs e)
@@ -30,42 +73,6 @@ namespace SWEN
             string noofroom = Request.QueryString["noofroom"];
             string adult = Request.QueryString["adult"];
             string child = Request.QueryString["child"];
-
-            lblDatein.Text = checkin;
-            lblDateOut.Text = checkout;
-            lblNight.Text = nights;
-            lblRoom.Text = noofroom;
-            lblRoomType.Text = roomtype;
-            lblAdult.Text = adult;
-            lblChild.Text = child;
-
-            if(roomtype.Equals("Twin Room"))
-            {
-                lblRates.Text = "248.00";
-            }
-            else if(roomtype.Equals("Single Bedroom"))
-            {
-                lblRates.Text = "165.40";
-            }
-            else if (roomtype.Equals("Double Bedroom"))
-            {
-                lblRates.Text = "248.00";
-            }
-            else if (roomtype.Equals("Triple Room"))
-            {
-                lblRates.Text = "331.20";
-            }
-            else if (roomtype.Equals("Twin for sole use"))
-            {
-                lblRates.Text = "196.60";
-            }
-            else if (roomtype.Equals("Quadruple Room"))
-            {
-                lblRates.Text = "408.00";
-            }
-
-            lblAmount.Text = Convert.ToString(Convert.ToInt32(lblRates.Text) * Convert.ToInt32(nights));
-
             string totalamount = lblAmount.Text;
 
             string querystring = "checkin=" + checkin;
@@ -84,5 +91,6 @@ namespace SWEN
         {
             Response.Redirect("NewReservation.aspx");
         }
+
     }
 }

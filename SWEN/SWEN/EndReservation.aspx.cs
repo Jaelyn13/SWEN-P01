@@ -11,12 +11,29 @@ namespace SWEN
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string checkin = Request.QueryString["checkin"];
+            string checkout = Request.QueryString["checkout"];
+            string nights = Request.QueryString["nights"];
+            string roomtype = Request.QueryString["roomtype"];
+            string noofroom = Request.QueryString["noofroom"];
+            string adult = Request.QueryString["adult"];
+            string child = Request.QueryString["child"];
+            string firstname = Request.QueryString["firstname"];
+            string lastname = Request.QueryString["lastname"];
 
+            lblDatein.Text = checkin;
+            lblDateOut.Text = checkout;
+            lblName.Text = firstname + " " + lastname;
+            lblRoom.Text = noofroom;
+            lblRoomType.Text = roomtype;
+            lblNight.Text = nights;
+            lblAdult.Text = adult;
+            lblChild.Text = child;
         }
 
         protected void btnHome_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Reservation.aspx?");
+            Response.Redirect("Reservation.aspx");
         }
     }
 }

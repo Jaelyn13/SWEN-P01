@@ -13,13 +13,13 @@ namespace SWEN {
     public partial class CustomerDetails {
         
         /// <summary>
-        /// tbxPassportNo control.
+        /// ScriptManager1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbxPassportNo;
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
         
         /// <summary>
         /// tbxFirst control.
@@ -38,6 +38,15 @@ namespace SWEN {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbxLast;
+        
+        /// <summary>
+        /// tbxPassportNo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbxPassportNo;
         
         /// <summary>
         /// rblGender control.
@@ -148,6 +157,15 @@ namespace SWEN {
         protected global::System.Web.UI.WebControls.TextBox tbxExpired;
         
         /// <summary>
+        /// tbxExpired_CalendarExtender control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::AjaxControlToolkit.CalendarExtender tbxExpired_CalendarExtender;
+        
+        /// <summary>
         /// tbxRemarks control.
         /// </summary>
         /// <remarks>
@@ -155,6 +173,15 @@ namespace SWEN {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbxRemarks;
+        
+        /// <summary>
+        /// lblStatus control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblStatus;
         
         /// <summary>
         /// btnSubmit control.

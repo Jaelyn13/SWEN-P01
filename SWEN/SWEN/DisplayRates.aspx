@@ -141,7 +141,7 @@
             </tr>
             <tr>
                 <td>
-                    <asp:Button ID="btnBack" runat="server" OnClick="btnBack_Click" Text="Back" Visible="False" />
+                    <asp:Button ID="btnBack" runat="server" OnClick="btnBack_Click" Text="Back" />
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
