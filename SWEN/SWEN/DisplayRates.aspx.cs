@@ -39,9 +39,9 @@ namespace SWEN
             {
                 lblRates.Text = "248.00";
             }
-            else if (roomtype.Equals("Triple Room"))
+            else if (roomtype.Equals("Triple Bedroom"))
             {
-                lblRates.Text = "331.00";
+                lblRates.Text = "321.00";
             }
             else if (roomtype.Equals("Twin for sole use"))
             {
