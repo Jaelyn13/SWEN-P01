@@ -1,11 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Reservation.aspx.cs" Inherits="SWEN.Reservation" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
-        .auto-style20 {
-            width: 243px;
-        }
         .auto-style21 {
             width: 213px;
+            height: 89px;
         }
         .auto-style22 {
             width: 243px;
@@ -18,11 +16,44 @@
         .auto-style24 {
             height: 26px;
         }
-        .auto-style25 {
-            width: 143px;
+        .auto-style27 {
+            width: 174px;
+            height: 50px;
         }
-        .auto-style26 {
-            width: 112px;
+        .auto-style29 {
+            width: 174px;
+            height: 78px;
+        }
+        .auto-style30 {
+            height: 78px;
+            width: 175px;
+        }
+        .auto-style32 {
+            width: 876px;
+        }
+        .auto-style34 {
+            height: 28px;
+            width: 175px;
+        }
+        .auto-style35 {
+            width: 1170px;
+            height: 28px;
+        }
+        .auto-style36 {
+            width: 315px;
+            height: 78px;
+            text-align: center;
+        }
+        .auto-style39 {
+            width: 174px;
+            height: 28px;
+        }
+        .auto-style43 {
+            width: 175px;
+            height: 50px;
+        }
+        .auto-style44 {
+            width: 175px;
         }
     </style>
 </asp:Content>
@@ -30,26 +61,29 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <div>
-    <table style="width:100%;">
+    <table class="auto-style32">
         <tr>
-            <td class="auto-style20">&nbsp;</td>
-            <td class="auto-style25" style="font-family: 'Arial Black'">&nbsp;</td>
-            <td class="auto-style26" style="font-family: 'Arial Black'">Reservation</td>
-            <td>&nbsp;</td>
+            <td class="auto-style27"></td>
+            <td class="auto-style43" style="font-family: 'Arial Black'; text-align: right;">&nbsp;</td>
+            <td class="auto-style43" style="font-family: 'Arial Black'; text-align: right;">Reservation</td>
+            <td class="auto-style43"></td>
+            <td class="auto-style44"></td>
         </tr>
         <tr>
-            <td class="auto-style22"></td>
-            <td class="auto-style23" colspan="2"></td>
-            <td class="auto-style24"></td>
+            <td class="auto-style39"></td>
+            <td class="auto-style35" colspan="2"></td>
+            <td class="auto-style34"></td>
+            <td class="auto-style44"></td>
         </tr>
         <tr>
-            <td class="auto-style20">&nbsp;</td>
-            <td class="auto-style21" colspan="2">
+            <td class="auto-style29"></td>
+            <td class="auto-style36" colspan="2">
                 <asp:Button ID="btnNew" runat="server" Text="New Reservation" OnClick="btnNew_Click" />
             </td>
-            <td>
+            <td class="auto-style30">
                 <asp:Button ID="btnEdit" runat="server" Text="View/Update/Delete Reservation" OnClick="btnEdit_Click" />
             </td>
+            <td class="auto-style30"></td>
         </tr>
     </table>
         </div>

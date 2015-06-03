@@ -11,6 +11,21 @@
     .auto-style22 {
         height: 23px;
     }
+    .auto-style24 {
+        width: 736px;
+        height: 14px;
+    }
+    .auto-style25 {
+            height: 7px;
+            width: 2263px;
+        }
+    .auto-style26 {
+            width: 753px;
+        }
+        .auto-style27 {
+            width: 753px;
+            height: 7px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -31,7 +46,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style20">First Name:</td>
+                <td class="auto-style26">First Name:</td>
                 <td>
                     <asp:TextBox ID="tbxFirst" runat="server"></asp:TextBox>
                 </td>
@@ -39,7 +54,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style20">Last Name:</td>
+                <td class="auto-style26">Last Name:</td>
                 <td>
                     <asp:TextBox ID="tbxLast" runat="server"></asp:TextBox>
                 </td>
@@ -47,7 +62,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style20">Passport No:</td>
+                <td class="auto-style26">Passport No:</td>
                 <td>
                     <asp:TextBox ID="tbxPassportNo" runat="server"></asp:TextBox>
                 </td>
@@ -55,7 +70,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style20">Gender:</td>
+                <td class="auto-style26">Gender:</td>
                 <td>
                     <asp:RadioButtonList ID="rblGender" runat="server" RepeatDirection="Horizontal">
                         <asp:ListItem>Female</asp:ListItem>
@@ -66,7 +81,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style20">Date of Birth:</td>
+                <td class="auto-style26">Date of Birth:</td>
                 <td>
                     <asp:TextBox ID="tbxDOB" runat="server"></asp:TextBox>
                     <cc1:CalendarExtender ID="tbxDOB_CalendarExtender" runat="server" TargetControlID="tbxDOB">
@@ -76,15 +91,15 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style21">Nationality:</td>
-                <td class="auto-style22">
+                <td class="auto-style27">Nationality:</td>
+                <td class="auto-style25">
                     <asp:TextBox ID="tbxNationality" runat="server"></asp:TextBox>
                 </td>
-                <td class="auto-style22"></td>
-                <td class="auto-style22"></td>
+                <td class="auto-style25"></td>
+                <td class="auto-style25"></td>
             </tr>
             <tr>
-                <td class="auto-style20">Contact Number:</td>
+                <td class="auto-style26">Contact Number:</td>
                 <td>
                     <asp:TextBox ID="tbxContact" runat="server"></asp:TextBox>
                 </td>
@@ -92,7 +107,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style20">Mailing Address:</td>
+                <td class="auto-style26">Mailing Address:</td>
                 <td>
                     <asp:TextBox ID="tbxMailing" runat="server"></asp:TextBox>
                 </td>
@@ -100,7 +115,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style20">Country:</td>
+                <td class="auto-style26">Country:</td>
                 <td>
                     <asp:TextBox ID="tbxCountry" runat="server"></asp:TextBox>
                 </td>
@@ -108,7 +123,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style20">Email Address:</td>
+                <td class="auto-style26">Email Address:</td>
                 <td>
                     <asp:TextBox ID="tbxEmail" runat="server"></asp:TextBox>
                 </td>
@@ -116,7 +131,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style20">Credit Card Type:</td>
+                <td class="auto-style26">Credit Card Type:</td>
                 <td>
                     <asp:DropDownList ID="ddlType" runat="server">
                         <asp:ListItem>VISA</asp:ListItem>
@@ -127,7 +142,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style20">Credit Card Number:</td>
+                <td class="auto-style26">Credit Card Number:</td>
                 <td>
                     <asp:TextBox ID="tbxCardNo" runat="server"></asp:TextBox>
                 </td>
@@ -135,7 +150,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style20">Credit Card CVC Number:</td>
+                <td class="auto-style26">Credit Card CVC Number:</td>
                 <td>
                     <asp:TextBox ID="tbxCVC" runat="server"></asp:TextBox>
                 </td>
@@ -143,7 +158,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style20">Credit Card Expired date:</td>
+                <td class="auto-style26">Credit Card Expired date:</td>
                 <td>
                     <asp:TextBox ID="tbxExpired" runat="server"></asp:TextBox>
                     <cc1:CalendarExtender ID="tbxExpired_CalendarExtender" runat="server" TargetControlID="tbxExpired" />
@@ -152,14 +167,14 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style20">&nbsp;</td>
+                <td class="auto-style26">&nbsp;</td>
                 <td>
                     &nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style20">Remarks: (100 Words)</td>
+                <td class="auto-style26">Remarks: (100 Words)</td>
                 <td>
                     &nbsp;</td>
                 <td>&nbsp;</td>
@@ -177,7 +192,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style20">
+                <td class="auto-style26">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>

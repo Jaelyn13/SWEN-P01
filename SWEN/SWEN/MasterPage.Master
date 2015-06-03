@@ -9,12 +9,8 @@
     </asp:ContentPlaceHolder>
     <style type="text/css">
         .auto-style12 {
-            width: 189px;
+            width: 163px;
             height: 131px;
-        }
-        .auto-style17 {
-            width: 190px;
-            height: 143px;
         }
         .auto-style18 {
             height: 131px;
@@ -23,6 +19,22 @@
         .auto-style19 {
             height: 131px;
             width: 2263px;
+        }
+        .auto-style21 {
+            width: 163px;
+            height: 113px;
+        }
+        .auto-style22 {
+            height: 113px;
+            width: 2263px;
+        }
+        .auto-style23 {
+            height: 113px;
+            width: 1018px;
+        }
+        .auto-style24 {
+            width: 190px;
+            height: 143px;
         }
     </style>
 </head>
@@ -34,11 +46,11 @@
         </asp:ContentPlaceHolder>
         <table style="width:100%;">
             <tr>
-                <td class="auto-style12">
-                    <img alt="" class="auto-style17" src="file:///C:/Users/oOtiAnYuOo/Desktop/club_palm_bay_logo_vector.png" /></td>
-                <td class="auto-style19" style="font-family: 'Segoe Script'; font-size: 50px; color: #66FFFF">Delonix Regia</td>
-                <td class="auto-style18">
-                    &nbsp;</td>
+                <td class="auto-style21">
+                    <img alt="" class="auto-style24" src="club_palm_bay_logo_vector.png" /></td>
+                <td class="auto-style22" style="font-family: 'Segoe Script'; font-size: 50px; color: #66FFFF">Delonix Regia</td>
+                <td class="auto-style23">
+                    </td>
             </tr>
             <tr>
                 <td class="auto-style12">

@@ -3,7 +3,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style20 {
-            width: 142px;
+            width: 151px;
+            height: 26px;
         }
         .auto-style21 {
             width: 340px;
@@ -16,27 +17,57 @@
             width: 340px;
             height: 23px;
         }
-        .auto-style27 {
-            width: 450px;
-        }
         .auto-style28 {
             width: 276px;
+            height: 25px;
         }
         .auto-style29 {
-            width: 142px;
-            height: 37px;
+            width: 151px;
+            height: 35px;
         }
         .auto-style30 {
             width: 340px;
-            height: 37px;
+            height: 35px;
         }
-        .auto-style31 {
-            width: 142px;
-            height: 24px;
+        .auto-style49 {
+            width: 163px;
+            height: 26px;
         }
-        .auto-style32 {
+        .auto-style60 {
+            width: 100%;
+            height: 391px;
+        }
+        .auto-style65 {
+            width: 151px;
+            height: 25px;
+        }
+        .auto-style66 {
             width: 340px;
-            height: 24px;
+            height: 25px;
+        }
+        .auto-style67 {
+            height: 25px;
+            width: 116px;
+        }
+        .auto-style68 {
+            width: 163px;
+            height: 25px;
+        }
+        .auto-style69 {
+            width: 190px;
+            height: 25px;
+        }
+        .auto-style71 {
+            height: 25px;
+            width: 268435328px;
+        }
+        .auto-style72 {
+            width: 69px;
+            height: 25px;
+        }
+        .auto-style73 {
+            width: 204px;
+            height: 25px;
         }
     </style>
 </asp:Content>
@@ -44,7 +75,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <div>
-        <table style="width:100%;">
+        <table class="auto-style60">
             <tr>
                 <td class="auto-style29">
                     <asp:ScriptManager ID="ScriptManager1" runat="server">
@@ -53,44 +84,44 @@
                 <td class="auto-style30" colspan="6" style="font-family: 'Arial Black'">Update Reservation</td>
             </tr>
             <tr>
-                <td class="auto-style31"></td>
-                <td class="auto-style32" colspan="6"></td>
+                <td class="auto-style65"></td>
+                <td class="auto-style66" colspan="6"></td>
             </tr>
             <tr>
-                <td class="auto-style31">&nbsp;</td>
-                <td class="auto-style32" colspan="6">&nbsp;</td>
+                <td class="auto-style65">&nbsp;</td>
+                <td class="auto-style66" colspan="6">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style20">&nbsp;</td>
-                <td colspan="3">Check-In:</td>
-                <td class="auto-style21" colspan="3">Check-Out:</td>
+                <td class="auto-style65"></td>
+                <td colspan="3" class="auto-style69">Check-In:</td>
+                <td class="auto-style68" colspan="3">Check-Out:</td>
             </tr>
             <tr>
-                <td class="auto-style20">&nbsp;</td>
-                <td colspan="3">
+                <td class="auto-style65"></td>
+                <td colspan="3" class="auto-style69">
                     <asp:TextBox ID="tbxIn" runat="server"></asp:TextBox>
                     <asp:CalendarExtender ID="tbxIn_CalendarExtender" runat="server" TargetControlID="tbxIn">
                     </asp:CalendarExtender>
                 </td>
-                <td class="auto-style21" colspan="3">
+                <td class="auto-style68" colspan="3">
                     <asp:TextBox ID="tbxOut" runat="server"></asp:TextBox>
                     <asp:CalendarExtender ID="tbxOut_CalendarExtender" runat="server" TargetControlID="tbxOut">
                     </asp:CalendarExtender>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style23"></td>
-                <td class="auto-style24" colspan="6"></td>
+                <td class="auto-style65"></td>
+                <td class="auto-style69" colspan="6"></td>
             </tr>
             <tr>
-                <td class="auto-style20">&nbsp;</td>
-                <td>No of Room(s)</td>
-                <td class="auto-style27" colspan="4">Adult</td>
+                <td class="auto-style65">&nbsp;</td>
+                <td class="auto-style67">No of Room(s)</td>
+                <td class="auto-style72" colspan="4">Adult</td>
                 <td class="auto-style28">Child</td>
             </tr>
             <tr>
-                <td class="auto-style20">&nbsp;</td>
-                <td class="auto-style21" colspan="2">
+                <td class="auto-style65"></td>
+                <td class="auto-style73" colspan="2">
                     <asp:DropDownList ID="ddlRoom" runat="server" style="height: 22px">
                         <asp:ListItem>1</asp:ListItem>
                         <asp:ListItem>2</asp:ListItem>
@@ -104,7 +135,7 @@
                         <asp:ListItem>10</asp:ListItem>
                     </asp:DropDownList>
                 </td>
-                <td class="auto-style21" colspan="2">
+                <td class="auto-style71" colspan="2">
                     <asp:DropDownList ID="ddlAdult" runat="server" style="height: 22px">
                         <asp:ListItem>1</asp:ListItem>
                         <asp:ListItem>2</asp:ListItem>
@@ -118,7 +149,7 @@
                         <asp:ListItem>10</asp:ListItem>
                     </asp:DropDownList>
                 </td>
-                <td class="auto-style21" colspan="2">
+                <td class="auto-style68" colspan="2">
                     <asp:DropDownList ID="ddlChild" runat="server" style="height: 22px">
                         <asp:ListItem>1</asp:ListItem>
                         <asp:ListItem>2</asp:ListItem>
@@ -134,32 +165,32 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style20">&nbsp;</td>
-                <td class="auto-style21" colspan="2">
-                    &nbsp;</td>
-                <td class="auto-style21" colspan="2">
-                    &nbsp;</td>
-                <td class="auto-style21" colspan="2">
-                    &nbsp;</td>
+                <td class="auto-style65"></td>
+                <td class="auto-style73" colspan="2">
+                    </td>
+                <td class="auto-style71" colspan="2">
+                    </td>
+                <td class="auto-style68" colspan="2">
+                    </td>
             </tr>
             <tr>
-                <td class="auto-style23"></td>
-                <td class="auto-style24" colspan="3">Room Type: </td>
-                <td class="auto-style24" colspan="3">Night(s):</td>
+                <td class="auto-style65"></td>
+                <td class="auto-style69" colspan="3">Room Type: </td>
+                <td class="auto-style69" colspan="3">Night(s):</td>
             </tr>
             <tr>
-                <td class="auto-style23">&nbsp;</td>
-                <td class="auto-style24" colspan="3">
+                <td class="auto-style65"></td>
+                <td class="auto-style69" colspan="3">
                     <asp:DropDownList ID="ddlRoomType" runat="server">
                         <asp:ListItem>Twin Room</asp:ListItem>
                         <asp:ListItem>Single Bedroom</asp:ListItem>
                         <asp:ListItem>Double Bedroom</asp:ListItem>
-                        <asp:ListItem>Triple Room</asp:ListItem>
+                        <asp:ListItem>Triple Bedroom</asp:ListItem>
                         <asp:ListItem>Twin for sole use</asp:ListItem>
                         <asp:ListItem>Quadruple Room</asp:ListItem>
                     </asp:DropDownList>
                 </td>
-                <td class="auto-style24" colspan="3">
+                <td class="auto-style69" colspan="3">
                     <asp:DropDownList ID="ddlNight" runat="server">
                         <asp:ListItem>1</asp:ListItem>
                         <asp:ListItem>2</asp:ListItem>
@@ -195,22 +226,22 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style23">&nbsp;</td>
-                <td class="auto-style24" colspan="6">&nbsp;</td>
+                <td class="auto-style65"></td>
+                <td class="auto-style69" colspan="6"></td>
             </tr>
             <tr>
-                <td class="auto-style23">&nbsp;</td>
-                <td class="auto-style24" colspan="6">&nbsp;</td>
+                <td class="auto-style65"></td>
+                <td class="auto-style69" colspan="6"></td>
             </tr>
             <tr>
-                <td class="auto-style20">&nbsp;</td>
-                <td class="auto-style21" colspan="6">
+                <td class="auto-style20"></td>
+                <td class="auto-style49" colspan="6">
                     <asp:Button ID="btnUpdate" runat="server" Text="Update" OnClick="btnUpdate_Click" />
                 </td>
             </tr>
             <tr>
-                <td class="auto-style20">&nbsp;</td>
-                <td class="auto-style21" colspan="6">&nbsp;</td>
+                <td class="auto-style20"></td>
+                <td class="auto-style49" colspan="6"></td>
             </tr>
         </table>
     </div>
