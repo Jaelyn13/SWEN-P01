@@ -111,5 +111,50 @@ namespace SWEN.Classes
             return result;
 
         }
+
+        public static Booking GetBookingId(int bookingid)
+        {
+            Booking b = new Booking();
+            SqlConnection conn = null;
+            try
+            {
+                conn = new SqlConnection();
+                conn.ConnectionString = ConfigurationManager.ConnectionStrings["DRHMSdbConnectionString"].ConnectionString;
+                conn.Open();
+
+                SqlCommand comm = new SqlCommand();
+                comm.Connection = conn;
+                comm.CommandText = "SELECT * FROM booking WHERE bookingid=@bookingid";
+                comm.Parameters.AddWithValue("@bookingid", bookingid);
+
+                SqlDataReader dr = comm.ExecuteReader();
+                if (dr.Read())
+                {
+                    b.Cardexpirydate = (string)dr["cardexpirydate"];
+                    b.Checkindate = (string)dr["checkindate"];
+                    b.Checkoutdate = (string)dr["checkoutdate"];
+                    b.Creditcardno = (string)dr["creditcardno"];
+                    b.Creditcardtype = (string)dr["creditcardtype"];
+                    b.Cvc = (string)dr["cvc"];
+                    b.Noofadults = (string)dr["noofadults"];
+                    b.Noofchildren = (string)dr["noofchildren"];
+                    b.Noofdays = (string)dr["noofdays"];
+                    b.Noofroom = (string)dr["noofroom"];
+                    b.Remarks = (string)dr["remaerks"];
+                    b.Roomtype = (string)dr["roomtype"];
+                }
+                    
+            }
+         
+            catch (SqlException e)
+            {
+                throw e;
+            }
+            return b;
+        }
+
+
+        
+
     }
 }

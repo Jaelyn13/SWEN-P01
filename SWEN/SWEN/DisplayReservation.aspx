@@ -4,7 +4,7 @@
         .auto-style20 {
         }
         .auto-style21 {
-            width: 106px;
+            width: 118px;
         }
     </style>
 </asp:Content>
