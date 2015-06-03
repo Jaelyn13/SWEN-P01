@@ -67,12 +67,22 @@ namespace SWEN
             querystring += "&" + "cardexpirydate=" + cardexpirydate;
             querystring += "&" + "remarks=" + remarks;
 
-            Booking b = new Booking(roomtype, nights, noofroom, adult, child, checkin, checkout, totalamount, creditcardtype, creditcardno, cvc, cardexpirydate, remarks);
             Customer c = new Customer(firstname, lastname, gender, nationality, passportno, contactno, email, dob, address, country);
 
-            if (DRHMSdbManager.CreateBooking(b) == 1 && DRHMSdbManager.CreateCustomer(c) == 1)
+            if (DRHMSdbManager.CreateCustomer(c) == 1)
             {
-                Server.Transfer("EndReservation.aspx?" + querystring);
+                    Customer c1 = DRHMSdbManager.GetCustomerId(passportno);
+                    int customerid = Convert.ToInt32(c1.Customerid);
+                    Booking b = new Booking(roomtype, nights, noofroom, adult, child, checkin, checkout, totalamount, creditcardtype, creditcardno, cvc, cardexpirydate, remarks, customerid);
+                    if (DRHMSdbManager.CreateBooking(b) == 1)
+                    {
+                        Booking b1 = DRHMSdbManager.GetReservationNo(customerid);
+                        int bookingid = Convert.ToInt32(b1.Bookingid);
+
+                        querystring += "&" + "bookingid=" + bookingid;
+                        Server.Transfer("EndReservation.aspx?" + querystring);
+                    }
+                               
             }
                         
         }

@@ -56,6 +56,7 @@ namespace SWEN
 
         protected void btnDelete_Click(object sender, EventArgs e)
         {
+            DRHMSdbManager.DeleteBooking(Convert.ToInt32(Request.QueryString["bookingid"]));
             Response.Redirect("DeleteReservation.aspx");
         }
 

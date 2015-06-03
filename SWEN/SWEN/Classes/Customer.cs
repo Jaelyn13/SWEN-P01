@@ -7,6 +7,7 @@ namespace SWEN.Classes
 {
     public class Customer
     {
+        private int customerid;
         private string firstname;
         private string lastname;
         private string gender;
@@ -37,6 +38,11 @@ namespace SWEN.Classes
             this.country = country;
         }
 
+        public int Customerid
+        {
+            get { return customerid; }
+            set { customerid = value; }
+        }
 
         public string Firstname
         {

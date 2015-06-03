@@ -91,7 +91,6 @@
     <Compile Include="Classes\Booking.cs" />
     <Compile Include="Classes\Customer.cs" />
     <Compile Include="Classes\DRHMSdbManager.cs" />
-    <Compile Include="Classes\Reservation.cs" />
     <Compile Include="CustomerDetails.aspx.cs">
       <DependentUpon>CustomerDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

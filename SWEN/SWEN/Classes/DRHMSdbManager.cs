@@ -22,8 +22,8 @@ namespace SWEN.Classes
                 conn.Open();
                 SqlCommand comm = new SqlCommand();
                 comm.Connection = conn;
-                comm.CommandText = "INSERT INTO Booking(roomtype,noofdays,noofroom,noofadults,noofchildren,checkindate,checkoutdate,totalamount,creditcardtype,creditcardno,cvc,cardexpirydate,remarks)" +
-                    " VALUES (@roomtype,@noofdays,@noofroom,@noofadults,@noofchildren,@checkindate,@checkoutdate,@totalamount,@creditcardtype,@creditcardno,@cvc,@cardexpirydate,@remarks)";
+                comm.CommandText = "INSERT INTO Booking(roomtype,noofdays,noofroom,noofadults,noofchildren,checkindate,checkoutdate,totalamount,creditcardtype,creditcardno,cvc,cardexpirydate,remarks,customerid)" +
+                    " VALUES (@roomtype,@noofdays,@noofroom,@noofadults,@noofchildren,@checkindate,@checkoutdate,@totalamount,@creditcardtype,@creditcardno,@cvc,@cardexpirydate,@remarks,@customerid)";
                 comm.Parameters.AddWithValue("@roomtype", b.Roomtype);
                 comm.Parameters.AddWithValue("@noofdays", b.Noofdays);
                 comm.Parameters.AddWithValue("@noofroom", b.Noofroom);
@@ -37,6 +37,7 @@ namespace SWEN.Classes
                 comm.Parameters.AddWithValue("@cvc", b.Cvc);
                 comm.Parameters.AddWithValue("@cardexpirydate", b.Cardexpirydate);
                 comm.Parameters.AddWithValue("@remarks", b.Remarks);
+                comm.Parameters.AddWithValue("@customerid", b.Customerid);
                 rowsinserted = comm.ExecuteNonQuery();
             }
             catch (SqlException e)
@@ -79,6 +80,65 @@ namespace SWEN.Classes
             return rowsinserted;
         }
 
+        public static Customer GetCustomerId(string passportno)
+        {
+            Customer c = new Customer();
+            SqlConnection conn = null;
+            try
+            {
+                conn = new SqlConnection();
+                conn.ConnectionString = ConfigurationManager.ConnectionStrings["DRHMSdbConnectionString"].ConnectionString;
+                conn.Open();
+
+                SqlCommand comm = new SqlCommand();
+                comm.Connection = conn;
+                comm.CommandText = "SELECT customerid FROM Customer WHERE passportno=@passportno";
+                comm.Parameters.AddWithValue("@passportno", passportno);
+
+                SqlDataReader dr = comm.ExecuteReader();
+                if (dr.Read())
+                {
+                    c.Customerid = (int)dr["Customerid"];
+                }
+
+            }
+
+            catch (SqlException e)
+            {
+                throw e;
+            }
+            return c;
+        }
+
+        public static Booking GetReservationNo(int customerid)
+        {
+            Booking b = new Booking();
+            SqlConnection conn = null;
+            try
+            {
+                conn = new SqlConnection();
+                conn.ConnectionString = ConfigurationManager.ConnectionStrings["DRHMSdbConnectionString"].ConnectionString;
+                conn.Open();
+
+                SqlCommand comm = new SqlCommand();
+                comm.Connection = conn;
+                comm.CommandText = "SELECT bookingid FROM Booking WHERE customerid=@customerid";
+                comm.Parameters.AddWithValue("@customerid", customerid);
+
+                SqlDataReader dr = comm.ExecuteReader();
+                if (dr.Read())
+                {
+                    b.Bookingid = (int)dr["Bookingid"];
+                }
+
+            }
+
+            catch (SqlException e)
+            {
+                throw e;
+            }
+            return b;
+        }
 
         public static Booking GetBookingId(int bookingid)
         {

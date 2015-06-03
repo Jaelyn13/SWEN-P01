@@ -21,13 +21,14 @@ namespace SWEN.Classes
         private string cvc;
         private string cardexpirydate;
         private string remarks;
+        private int customerid;
 
         public Booking()
         { 
 
         }
 
-        public Booking(string roomtype, string noofdays, string noofroom, string noofadults, string noofchildren, string checkindate, string checkoutdate, string totalamount, string creditcardtype, string creditcardno, string cvc, string cardexpirydate, string remarks)
+        public Booking(string roomtype, string noofdays, string noofroom, string noofadults, string noofchildren, string checkindate, string checkoutdate, string totalamount, string creditcardtype, string creditcardno, string cvc, string cardexpirydate, string remarks, int customerid)
         {
             this.roomtype = roomtype;
             this.noofdays = noofdays;
@@ -42,6 +43,7 @@ namespace SWEN.Classes
             this.cvc = cvc;
             this.cardexpirydate = cardexpirydate;
             this.remarks = remarks;
+            this.customerid = customerid;
         }
 
         public int Bookingid
@@ -50,6 +52,11 @@ namespace SWEN.Classes
             set { bookingid = value; }
         }
 
+        public int Customerid
+        {
+            get { return customerid; }
+            set { customerid = value; }
+        }
 
         public string Roomtype
         {
