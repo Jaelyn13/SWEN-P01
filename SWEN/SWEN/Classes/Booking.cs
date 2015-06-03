@@ -7,6 +7,7 @@ namespace SWEN.Classes
 {
     public class Booking
     {
+        private int bookingid;
         private string roomtype;
         private string noofdays;
         private string noofroom;
@@ -41,7 +42,12 @@ namespace SWEN.Classes
             this.cvc = cvc;
             this.cardexpirydate = cardexpirydate;
             this.remarks = remarks;
-           
+        }
+
+        public int Bookingid
+        {
+            get { return bookingid; }
+            set { bookingid = value; }
         }
 
 

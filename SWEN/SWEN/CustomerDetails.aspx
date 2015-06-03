@@ -167,7 +167,7 @@
             </tr>
             <tr>
                 <td class="auto-style20" colspan="2" rowspan="2">
-                    <asp:TextBox ID="tbxRemarks" runat="server" Height="77px" Width="369px"></asp:TextBox>
+                    <asp:TextBox ID="tbxRemarks" runat="server" Height="77px" Width="369px" TextMode="MultiLine"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>

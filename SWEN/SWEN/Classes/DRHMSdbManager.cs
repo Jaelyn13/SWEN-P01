@@ -78,6 +78,38 @@ namespace SWEN.Classes
             }
             return rowsinserted;
         }
-         
+
+        public static ArrayList GetReservationNo(string creditcardno)
+        {
+            ArrayList result = new ArrayList();
+            SqlConnection conn = null;
+            try
+            {
+                conn = new SqlConnection();
+                conn.ConnectionString = ConfigurationManager.ConnectionStrings["DRHMSdbConnectionString"].ConnectionString;
+                conn.Open();
+                SqlCommand comm = new SqlCommand();
+                comm.Connection = conn;
+                comm.CommandText = "SELECT bookingid FROM Booking WHERE creditcardno=@creditcardno";
+                comm.Parameters.AddWithValue("@creditcardno", creditcardno);
+                SqlDataReader dr = comm.ExecuteReader();
+                while (dr.Read())
+                {
+                    Booking b = new Booking();
+                    b.Bookingid = (int)dr["Bookingid"];
+                    result.Add(b);
+                }
+
+                dr.Close();
+
+            }
+            catch (SqlException e)
+            {
+                throw e;
+            }
+
+            return result;
+
+        }
     }
 }
