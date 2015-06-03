@@ -145,6 +145,29 @@ namespace SWEN.Classes
             }
             return rowsupdated;
         }
+
+        public static int DeleteBooking(int bookingid)
+        {
+            int rowsdeleted = 0;
+
+            SqlConnection conn = null;
+            try
+            {
+                conn = new SqlConnection();
+                conn.ConnectionString = ConfigurationManager.ConnectionStrings["DRHMSdbConnectionString"].ConnectionString;
+                conn.Open();
+                SqlCommand comm = new SqlCommand();
+                comm.Connection = conn;
+                comm.CommandText = "DELETE Booking where bookingid=@bookingid";
+                comm.Parameters.AddWithValue("@bookingid", bookingid);
+                rowsdeleted = comm.ExecuteNonQuery();
+            }
+            catch (SqlException e)
+            {
+                throw e;
+            }
+            return rowsdeleted;
+        }
         
 
     }
