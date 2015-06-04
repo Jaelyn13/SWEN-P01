@@ -231,7 +231,9 @@
             </tr>
             <tr>
                 <td class="auto-style65"></td>
-                <td class="auto-style69" colspan="6"></td>
+                <td class="auto-style69" colspan="6">
+                    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style20"></td>
